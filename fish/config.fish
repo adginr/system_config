@@ -31,3 +31,9 @@ if status is-interactive
     abbr --add bs 'pnpm build && pnpm start'
     abbr --add p pnpm
 end
+
+pyenv init - | source
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
