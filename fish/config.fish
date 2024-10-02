@@ -1,6 +1,7 @@
 if status is-interactive
     eval (/opt/homebrew/bin/brew shellenv)
     # Git
+    abbr --add g git
     abbr --add gc git checkout
     abbr --add gcb git checkout -b
     abbr --add gs git status
@@ -28,9 +29,36 @@ if status is-interactive
     abbr --add pr pnpm remove
     abbr --add bs 'pnpm build && pnpm start'
     abbr --add p pnpm
+
+
+    # Bun
+    abbr --add b bun
+    abbr --add br bun run
+    abbr --add bdev bun run dev
+    abbr --add bi bun install
+    abbr --add ba bun add
+    abbr --add br bun remove
+    abbr --add bx bunx
+
+    # Rust
+    abbr --add c cargo
+    abbr --add cr cargo run
+    abbr --add cb cargo build
+
+
+    pyenv init - | source
+    fnm env --use-on-cd | source
+
+    # pnpm
+    set -gx PNPM_HOME /Users/kolin/Library/pnpm
+    if not string match -q -- $PNPM_HOME $PATH
+        set -gx PATH "$PNPM_HOME" $PATH
+    end
+
+    # warpify shell
+    printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish" }}\x9c'
 end
 
-pyenv init - | source
-fnm env --use-on-cd | source
-
-printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish" }}\x9c'
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
