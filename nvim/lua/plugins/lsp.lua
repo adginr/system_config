@@ -3,11 +3,21 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			local lspconfig = require("lspconfig")
-			lspconfig.svelte.setup({})
-			lspconfig.ts_ls.setup({})
-			lspconfig.tailwindcss.setup({})
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			lspconfig.svelte.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.ts_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.tailwindcss.setup({
+
+				capabilities = capabilities,
+			})
 			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
 				settings = {
+
 					Lua = {
 						diagnostics = { globals = { "vim" } },
 					},

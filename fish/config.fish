@@ -11,6 +11,7 @@ if status is-interactive
 
     # Poetry
     abbr --add pr poetry run
+
     # Poetry Project Specific
     abbr --add prt poetry run ./test.sh
     abbr --add pra poetry run ./analysis.sh
@@ -21,30 +22,24 @@ if status is-interactive
     abbr --add pd podman
 
     # Node, Javascript
-    abbr --add devv npm run dev
     abbr --add dev pnpm run dev
     abbr --add start pnpm run start
     abbr --add build pnpm run build
     abbr --add pa pnpm add
     abbr --add pr pnpm remove
     abbr --add bs 'pnpm build && pnpm start'
-    abbr --add p pnpm
-
 
     # Bun
-    abbr --add b bun
     abbr --add br bun run
-    abbr --add bdev bun run dev
+    abbr --add bd bun run dev
     abbr --add bi bun install
     abbr --add ba bun add
     abbr --add br bun remove
     abbr --add bx bunx
 
     # Rust
-    abbr --add c cargo
     abbr --add cr cargo run
     abbr --add cb cargo build
-
 
     pyenv init - | source
     fnm env --use-on-cd | source
@@ -55,8 +50,6 @@ if status is-interactive
         set -gx PATH "$PNPM_HOME" $PATH
     end
 
-    # warpify shell
-    printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish" }}\x9c'
 end
 
 # bun

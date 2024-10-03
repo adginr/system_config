@@ -22,12 +22,21 @@ vim.opt.swapfile = false
 
 -- Fillchars
 vim.opt.fillchars = {
-    eob = " ",        -- Suppress ~ at EndOfBuffer
-    vert = "▕",      -- Vertical line character
-    fold = " ",      -- Fold character
-    diff = "╱",      -- Diff character
-    msgsep = "‾",    -- Message separator character
-    foldopen = "▾",  -- Fold open character
-    foldclose = "▸", -- Fold close character
-    foldsep = "│",   -- Fold separator character
+	eob = " ", -- Suppress ~ at EndOfBuffer
+	vert = "▕", -- Vertical line character
+	fold = " ", -- Fold character
+	diff = "╱", -- Diff character
+	msgsep = "‾", -- Message separator character
+	foldopen = "▾", -- Fold open character
+	foldclose = "▸", -- Fold close character
+	foldsep = "│", -- Fold separator character
 }
+
+-- Fold
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldcolumn = "0"
+vim.opt.foldtext = ""
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 1
+vim.opt.foldnestmax = 4
