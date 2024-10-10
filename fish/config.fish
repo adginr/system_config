@@ -50,6 +50,8 @@ if status is-interactive
         set -gx PATH "$PNPM_HOME" $PATH
     end
 
+    set fish_greeting ""
+
 end
 
 # bun
