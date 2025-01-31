@@ -7,6 +7,7 @@ return {
       },
       tsserver = {
         enabled = true,
+        filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
         settings = {
           typescript = {
             inlayHints = {

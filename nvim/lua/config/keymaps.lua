@@ -10,4 +10,3 @@ keymap.set("n", "<s-tab>", ":BufferLineCyclePrev<cr>", { silent = true })
 
 keymap.set("n", "<D-s>", ":w<cr>", { silent = true, noremap = true })
 keymap.set("i", "<D-s>", "<ESC>:w<cr>a", { silent = true })
-vim.api.nvim_set_keymap("n", "<D-s>", ":w<cr>", { silent = true, noremap = true })

@@ -8,40 +8,25 @@ if status is-interactive
     abbr --add push git push
     abbr --add pull git pull
     abbr --add main git checkout main
+    abbr --add commit git commit
 
-    # Poetry
-    abbr --add pr poetry run
-
-    # Poetry Project Specific
-    abbr --add prt poetry run ./test.sh
-    abbr --add pra poetry run ./analysis.sh
     # Docker
-    abbr --add up docker-compose up
-    abbr --add build docker-compose build
-    # Podman
-    abbr --add pd podman
+    abbr --add d docker
+    abbr --add dc docker compose
+    abbr --add dcup docker compose up -d
+    abbr --add dcb docker compose build
 
-    # Node, Javascript
-    abbr --add dev pnpm run dev
-    abbr --add start pnpm run start
-    abbr --add build pnpm run build
+    # pnpm 
+    abbr --add dv pnpm run dev
     abbr --add pa pnpm add
+    abbr --add pi pnpm install --ignore-scripts
     abbr --add pr pnpm remove
-    abbr --add bs 'pnpm build && pnpm start'
+    abbr --add pb pnpm run build
+    abbr --add px pnpm dlx
 
-    # Bun
-    abbr --add br bun run
-    abbr --add bd bun run dev
-    abbr --add bi bun install
-    abbr --add ba bun add
-    abbr --add br bun remove
-    abbr --add bx bunx
+    abbr --add shad pnpm dlx shadcn@latest add
 
-    # Rust
-    abbr --add cr cargo run
-    abbr --add cb cargo build
-
-    pyenv init - | source
+    # pyenv init - | source
     fnm env --use-on-cd | source
 
     # pnpm
@@ -50,10 +35,5 @@ if status is-interactive
         set -gx PATH "$PNPM_HOME" $PATH
     end
 
-    set fish_greeting ""
-
+    set fish_greeting '' 
 end
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
