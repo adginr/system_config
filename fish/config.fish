@@ -10,6 +10,7 @@ if status is-interactive
     abbr --add main git checkout main
     abbr --add commit git commit
 
+
     # Docker
     abbr --add d docker
     abbr --add dc docker compose
@@ -26,6 +27,9 @@ if status is-interactive
 
     abbr --add shad pnpm dlx shadcn@latest add
 
+    # Node 
+    abbr --add nd NODE_OPTIONS='--no-warnings' node --experimental-strip-types
+
     # pyenv init - | source
     fnm env --use-on-cd | source
 
@@ -35,5 +39,5 @@ if status is-interactive
         set -gx PATH "$PNPM_HOME" $PATH
     end
 
-    set fish_greeting '' 
+    set fish_greeting ''
 end

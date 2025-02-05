@@ -43,7 +43,7 @@ function fish_prompt --description 'Write out the prompt'
     set -q __fish_git_prompt_color_branch
     or set -g __fish_git_prompt_color_branch green
     set -q __fish_git_prompt_char_stateseparator
-    or set -g __fish_git_prompt_char_stateseparator ' ⚡'
+    or set -g __fish_git_prompt_char_stateseparator '⚡'
     fish_vcs_prompt '|%s'
     echo
 
@@ -51,6 +51,6 @@ function fish_prompt --description 'Write out the prompt'
         set_color $fish_color_error
     end
 
-    echo -n '➤ '
+    echo -n '↪ '
     set_color normal
 end
