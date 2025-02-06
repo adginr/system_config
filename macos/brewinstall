@@ -11,12 +11,10 @@ brew install --cask font-lekton-nerd-font
 brew install --cask font-overpass
 brew install --cask font-victor-mono-nerd-font
 brew install --cask google-ads-editor
-brew install --cask handbrake
 brew install --cask insomnia
 brew install --cask min
 brew install --cask notion-calendar
 brew install --cask obsidian
-brew install --cask rar
 brew install --cask slack
 brew install --cask telegram
 brew install --cask visual-studio-code
