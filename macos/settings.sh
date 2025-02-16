@@ -1,7 +1,8 @@
 #!usr/bin bash
 
 echo "Setting up macOS" 
-
+# For VS Code + Vim
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              
 
 # Hide remaining battery time; show percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"

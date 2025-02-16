@@ -1,5 +1,6 @@
 if status is-interactive
     eval (/opt/homebrew/bin/brew shellenv)
+
     # Git
     abbr --add g git
     abbr --add gc git checkout
@@ -17,8 +18,20 @@ if status is-interactive
     abbr --add dcup docker compose up -d
     abbr --add dcb docker compose build
 
+    # bun
+    abbr --add dv bun run dev
+    abbr --add br bun run
+    abbr --add bi bun install
+    abbr --add ba bun add
+    abbr --add brm bun remove
+    abbr --add bad bun add --dev
+    abbr --add bx bunx
+    abbr --add bu bun update 
+    abbr --add brt bun run test 
+	
+
     # pnpm 
-    abbr --add dv pnpm run dev
+    # abbr --add dv pnpm run dev
     abbr --add pa pnpm add
     abbr --add pi pnpm install --ignore-scripts
     abbr --add pr pnpm remove
