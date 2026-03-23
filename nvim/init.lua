@@ -1,6 +1,2 @@
--- Import Modules
-require('config.lazy')
-require('config.keymap')
-require('config.opt')
-require('config.autoreload')
-require('config.theme')
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

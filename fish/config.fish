@@ -11,7 +11,6 @@ if status is-interactive
     abbr --add main git checkout main
     abbr --add commit git commit
 
-
     # Docker
     abbr --add d docker
     abbr --add dc docker compose
@@ -19,26 +18,31 @@ if status is-interactive
     abbr --add dcb docker compose build
 
     # bun
-    abbr --add dv bun run dev
-    abbr --add br bun run
-    abbr --add bi bun install
-    abbr --add ba bun add
-    abbr --add brm bun remove
-    abbr --add bad bun add --dev
-    abbr --add bx bunx
-    abbr --add bu bun update 
-    abbr --add brt bun run test 
-	
+    # abbr --add dv bun run dev
+    # abbr --add br bun run
+    # abbr --add bi bun install
+    # abbr --add ba bun add
+    # abbr --add brm bun remove
+    # abbr --add bad bun add --dev
+    # abbr --add bx bunx
+    # abbr --add bu bun update 
+    # abbr --add brt bun run test 
 
     # pnpm 
-    # abbr --add dv pnpm run dev
+    abbr --add pn pnpm
+    abbr --add dv pnpm dev
+    abbr --add preview pnpm run build \&\& pnpm run preview
     abbr --add pa pnpm add
-    abbr --add pi pnpm install --ignore-scripts
+    abbr --add pi pnpm install
     abbr --add pr pnpm remove
-    abbr --add pb pnpm run build
     abbr --add px pnpm dlx
-
+    abbr --add ps pnpm start
+    # Shadcn
     abbr --add shad pnpm dlx shadcn@latest add
+    abbr --add sa pnpm dlx shadcn-svelte@latest add
+
+    # cz commitizen
+    abbr --add czc cz commit
 
     # Node 
     abbr --add nd NODE_OPTIONS='--no-warnings' node --experimental-strip-types
@@ -54,3 +58,12 @@ if status is-interactive
 
     set fish_greeting ''
 end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/kolin/.lmstudio/bin
+set -gx PATH /opt/homebrew/lib/ruby/gems/3.3.0/bin $PATH
+# End of LM Studio CLI section
+set -gx HOMEBREW_NO_ENV_HINTS 1
+
+# Added by Antigravity
+fish_add_path /Users/kolin/.antigravity/antigravity/bin

@@ -1,20 +1,13 @@
-#!usr/bin bash
+#!/usr/bin/env bash
 
-echo "Setting up macOS" 
+echo "Setting up macOS"
 # For VS Code + Vim
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              
-
-# Hide remaining battery time; show percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-defaults write com.apple.menuextra.battery ShowTime -string "NO"
-
-# Disable dashboard:
-defaults write com.apple.dashboard mcx-disabled -bool true
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # === Dock ===
 
 # Size:
-defaults write com.apple.dock tilesize -int 55 
+defaults write com.apple.dock tilesize -int 55
 
 # Show indicator lights for open apps in Dock:
 defaults write com.apple.dock show-process-indicators -bool true
@@ -45,14 +38,8 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
-# Allow text selection in Quick Look
-defaults write com.apple.finder QLEnableTextSelection -bool true
-
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
-
-# Avoid creating .DS_Store files on network volumes
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
@@ -79,14 +66,6 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Privacy: don’t send search queries to Apple
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
 defaults write com.apple.Safari SuppressSearchSuggestions -bool true
-
-# Improve Safari security
-defaults write com.apple.Safari \
-  com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabled \
-  -bool false
-defaults write com.apple.Safari \
-  com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabledForLocalFiles \
-  -bool false
 
 # === Text editing ===
 
