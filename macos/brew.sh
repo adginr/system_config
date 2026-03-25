@@ -21,6 +21,7 @@ brew install \
 # === Apps ===
 brew install --cask \
   chatgpt-atlas \
+  ghostty \
   claude \
   claude-code \
   coconutbattery \
