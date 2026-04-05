@@ -2,4 +2,4 @@
 # VERSION: 3.0
 SETUVAR --export PYENV_ROOT:/Users/kolin/\x2epyenv
 SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/opt/homebrew/opt/libpq/bin\x1e/Users/kolin/\x2eantigravity/antigravity/bin\x1e/opt/homebrew/opt/ruby\x403\x2e3/bin\x1e/Users/kolin/\x2elocal/state/fnm_multishells\x1e/opt/homebrew/bin\x1e/Users/kolin/\x2ebun/bin\x1e/opt/homebrew/opt/postgresql\x4017/bin\x1e/Users/kolin/\x2epyenv/bin\x1e/opt/homebrew/opt/node\x4018/bin\x1e/Applications/Ghostty\x2eapp/Contents/MacOS
+SETUVAR fish_user_paths:/Users/kolin/\x2elocal/bin\x1e/opt/homebrew/opt/libpq/bin\x1e/Users/kolin/\x2eantigravity/antigravity/bin\x1e/opt/homebrew/opt/ruby\x403\x2e3/bin\x1e/Users/kolin/\x2elocal/state/fnm_multishells\x1e/opt/homebrew/bin\x1e/Users/kolin/\x2ebun/bin\x1e/opt/homebrew/opt/postgresql\x4017/bin\x1e/Users/kolin/\x2epyenv/bin\x1e/opt/homebrew/opt/node\x4018/bin\x1e/Applications/Ghostty\x2eapp/Contents/MacOS

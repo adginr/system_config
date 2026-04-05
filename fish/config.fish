@@ -36,7 +36,7 @@ if status is-interactive
     abbr --add pi pnpm install
     abbr --add pr pnpm remove
     abbr --add px pnpm dlx
-    abbr --add ps pnpm start
+    # abbr --add ps pnpm start
     # Shadcn
     abbr --add shad pnpm dlx shadcn@latest add
     abbr --add sa pnpm dlx shadcn-svelte@latest add
@@ -67,3 +67,4 @@ set -gx HOMEBREW_NO_ENV_HINTS 1
 
 # Added by Antigravity
 fish_add_path /Users/kolin/.antigravity/antigravity/bin
+fish_add_path /Users/kolin/.local/bin/
