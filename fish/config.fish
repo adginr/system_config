@@ -68,3 +68,4 @@ set -gx HOMEBREW_NO_ENV_HINTS 1
 # Added by Antigravity
 fish_add_path /Users/kolin/.antigravity/antigravity/bin
 fish_add_path /Users/kolin/.local/bin/
+fish_add_path /usr/local/bin
